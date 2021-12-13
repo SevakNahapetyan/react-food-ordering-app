@@ -24,7 +24,7 @@ const HeaderCartButton = (props) => {
     return () => {
       clearTimeout(timerId);
     };
-  }, [items]);
+  }, [items, cartCtx.items.length]);
 
   const btnClasses = `${classes.button} ${
     btnIsHighlighted ? classes.bump : ""
